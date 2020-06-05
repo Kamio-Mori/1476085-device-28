@@ -7,16 +7,27 @@
   <body>
   <header>
     <nav>
-      <a href="index.html">
+      <a href="">
         <img src="img/logo.svg" width="163" height="35" alt="Логотип">
       </a>
-      <span>Поиск по сайту</span>
+      <form action="https://echo.htmlacademy.ru/courses" method="get">
+        <label for="search" class="visually-hidden">Поиск по сайту</label>
+        <input id="search" type="search" name="search" placeholder="Поиск по сайту">
+      </form>
       <a href="">Войти</a>
       <a href="">Сравнить</a>
       <a href="">Корзина</a>
       <a href="">
         Каталог товаров
       </a>
+      <ul class="visually-hidden">
+        <li><a href="">Виртуальная реальность</a></li>
+        <li><a href="catalog.html">Моноподы для селфи</a></li>
+        <li><a href="">Экшн-камеры</a></li>
+        <li><a href="">Фитнес-браслеты</a></li>
+        <li><a href="">Умные часы</a></li>
+        <li><a href="">Квадрокоптер</a></li>
+      </ul>
       <ul>
         <li><a href="">Доставка</a></li>
         <li><a href="">Гарантия</a></li>
@@ -59,7 +70,7 @@
     </section>
   </main>
   <footer>
-    <a href="index.html">
+    <a href="">
       <img src="img/logo-y.svg" width="163" height="35"  alt="Логотип">
     </a>
     <a href="">Войти</a>
@@ -73,11 +84,33 @@
     </ul>
     <p>Тел.: +7(495)495-95-95</p>
     <ul>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Инстаграм</a></li>
-        <li><a href="#">Вконтакте</a></li>
+        <li><a href="" aria-label="Фейсбук"></a></li>
+        <li><a href="" aria-label="Инстаграм"></a></li>
+        <li><a href="" aria-label="Вконтакте"></a></li>
     </ul>
-    <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+    <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy"></a>
   </footer>
+  <section class="visually-hidden">
+    <form action="https://echo.htmlacademy.ru/courses" method="post">
+      <p>
+        <label for="write-us-name">Ваше имя:</label>
+        <input id="write-us-name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="write-us-email">Ваш e-mail:</label>
+        <input id="write-us-email" type="email" name="email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="write-us-message">Текст письма:</label>
+        <textarea id="write-us-message"  name="message" placeholder="В свободной форме"></textarea>
+      </p>
+      <button type="submit">Отправить</button>
+    </form>
+    <button type="button" aria-label="Закрыть"></button>
+  </section>
+  <section class="visually-hidden">
+    <!--я карта!-->
+    <button type="button" aria-label="Закрыть"></button>
+  </section>
   </body>
 </html>
