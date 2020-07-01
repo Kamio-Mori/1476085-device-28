@@ -1,94 +1,95 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
   <header>
-    <nav>
-      <a href="">
+    <nav class="nav">
+      <a href="" class="logo nav__logo">
         <img src="img/logo.svg" width="163" height="35" alt="Логотип">
       </a>
-      <form action="https://echo.htmlacademy.ru/courses" method="get">
+      <form action="https://echo.htmlacademy.ru/courses" class="search-form" method="get">
         <label for="search" class="visually-hidden">Поиск по сайту</label>
         <input id="search" type="search" name="search" placeholder="Поиск по сайту">
+        <button type="submit" class="search-form__button visually-hidden">Найти</button>
       </form>
-      <a href="">Войти</a>
-      <a href="">Сравнить</a>
-      <a href="">Корзина</a>
-      <a href="">
-        Каталог товаров
-      </a>
-      <ul class="visually-hidden">
-        <li><a href="">Виртуальная реальность</a></li>
-        <li><a href="catalog.html">Моноподы для селфи</a></li>
-        <li><a href="">Экшн-камеры</a></li>
-        <li><a href="">Фитнес-браслеты</a></li>
-        <li><a href="">Умные часы</a></li>
-        <li><a href="">Квадрокоптер</a></li>
-      </ul>
-      <ul>
-        <li><a href="">Доставка</a></li>
-        <li><a href="">Гарантия</a></li>
-        <li><a href="">Контакты</a></li>
+      <a href="" class="nav__link nav__link_login">Войти</a>
+      <a href="" class="nav__link nav__link_compare">Сравнить</a>
+      <a href="" class="nav__link nav__link_cart">Корзина</a>
+      <ul class="menu">
+        <li class="menu__item menu__item_catalog"><a href="">Каталог товаров</a>
+          <ul class="sub-menu visually-hidden">
+            <li class="sub-menu__item"><a href="">Виртуальная реальность</a></li>
+            <li class="sub-menu__item"><a href="catalog.html">Моноподы для селфи</a></li>
+            <li class="sub-menu__item"><a href="">Экшн-камеры</a></li>
+            <li class="sub-menu__item"><a href="">Фитнес-браслеты</a></li>
+            <li class="sub-menu__item"><a href="">Умные часы</a></li>
+            <li class="sub-menu__item"><a href="">Квадрокоптер</a></li>
+          </ul>
+        </li>
+        <li class="menu__item"><a href="">Доставка</a></li>
+        <li class="menu__item"><a href="">Гарантия</a></li>
+        <li class="menu__item menu__item_contacts"><a href="">Контакты</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section>
-      <h2>О нас</h2>
-      <p>
+    <section class="about-us-section info-block">
+      <h2 class="info-block__header">О нас</h2>
+      <p class="info-block__text">
         Огромный выбор гаджетов не оставит равнодушным гика,<br>
-       который есть в каждом из нас.
+        который есть в каждом из нас.
       </p>
-      <p>
+      <p class="info-block__text">
         Мы можем доставить ваш товар в самые отдаленные точки России!<br>
         DEVICE работает со многими транспортными компаниями:
       </p>
-      <ul>
-        <li><a href="">Деловые линии</a></li>
-        <li><a href="">Автотрейдинг</a></li>
-        <li><a href="">ЖелДорЭкспедиция</a></li>
+      <ul class="company-list">
+        <li class="company-list__item"><a href="">Деловые линии</a></li>
+        <li class="company-list__item"><a href="">Автотрейдинг</a></li>
+        <li class="company-list__item"><a href="">ЖелДорЭкспедиция</a></li>
       </ul>
-      <a href=""> Подробнее о нас</a>
+      <a href="" class="info-block__button">Подробнее о нас</a>
     </section>
-    <section>
-      <h2>Контакты</h2>
-      <p>
-        Вы можете забрать товар сами, заехав в наш офис.<br>
-        Заодно, вы можете проверить работоспособность покупки. Всякое бывает.
+    <section class="contacts-section info-block">
+      <h2 class="info-block__header">Контакты</h2>
+      <p class="info-block__text">
+        Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
+        проверить работоспособность покупки. Всякое бывает.
       </p>
-      <p>
+      <p class="info-block__text">
         <a href="https://clck.ru/NbfSm">
           <img src="img/map.jpg" alt="Карта, г.Москва, ул.Строителей, 15">
         </a>
       </p>
-      <a href="">
-        Напишите нам
-      </a>
+      <a href="" class="info-block__button">Напишите нам</a>
     </section>
   </main>
-  <footer>
-    <a href="">
-      <img src="img/logo-y.svg" width="163" height="35"  alt="Логотип">
+  <footer class="footer">
+    <a href="" class="logo logo_yellow">
+      <img src="img/logo-y.svg" width="163" height="35" alt="Логотип">
     </a>
-    <a href="">Войти</a>
-    <a href="">Сравнить</a>
-    <a href="">Корзина</a>
-    <p>г.Москва, ул.Строителей, 15</p>
-    <ul>
-        <li><a href="">Доставка</a></li>
-        <li><a href="">Гарантия</a></li>
-        <li><a href="">Контакты</a></li>
+    <a href="" class="footer__link footer__link_login">Войти</a>
+    <a href="" class="footer__link footer__link_compare">Сравнить</a>
+    <a href="" class="footer__link footer__link_cart">Корзина</a>
+    <p class="footer-contacts footer-contacts_address">г. Москва, ул. Строителей, 15</p>
+    <ul class="menu">
+      <li class="menu__item"><a href="" class="menu__item_footer">Доставка</a></li>
+      <li class="menu__item"><a href="" class="menu__item_footer">Гарантия</a></li>
+      <li class="menu__item menu__item_contacts"><a href="" class="menu__item_footer">Контакты</a></li>
     </ul>
-    <p>Тел.: +7(495)495-95-95</p>
-    <ul>
-        <li><a href="" aria-label="Фейсбук"></a></li>
-        <li><a href="" aria-label="Инстаграм"></a></li>
-        <li><a href="" aria-label="Вконтакте"></a></li>
+    <p class="footer-contacts footer-contacts_phone">Тел.: +7(495)495-95-95</p>
+    <ul class="socials">
+      <li class="socials__item socials__item_facebook"><a href="" aria-label="Фейсбук"></a></li>
+      <li class="socials__item socials__item_instagram"><a href="" aria-label="Инстаграм"></a></li>
+      <li class="socials__item socials__item_twitter"><a href="" aria-label="Твиттер"></a></li>
     </ul>
-    <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy"></a>
+    <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy"></a>
   </footer>
   <section class="visually-hidden">
     <form action="https://echo.htmlacademy.ru/courses" method="post">
@@ -102,7 +103,7 @@
       </p>
       <p>
         <label for="write-us-message">Текст письма:</label>
-        <textarea id="write-us-message"  name="message" placeholder="В свободной форме"></textarea>
+        <textarea id="write-us-message" name="message" placeholder="В свободной форме"></textarea>
       </p>
       <button type="submit">Отправить</button>
     </form>
@@ -112,5 +113,5 @@
     <!--я карта!-->
     <button type="button" aria-label="Закрыть"></button>
   </section>
-  </body>
+</body>
 </html>
