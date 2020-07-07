@@ -10,7 +10,7 @@
 <body>
   <header>
     <nav class="nav">
-      <a href="" class="logo nav__logo">
+      <a href="index.html" class="logo nav__logo">
         <img src="img/logo.svg" width="163" height="35" alt="Логотип">
       </a>
       <form action="https://echo.htmlacademy.ru/courses" class="search-form" method="get">
@@ -40,7 +40,7 @@
     </nav>
   </header>
   <main>
-    <h1 class="catalog-header">Моноподы для селфи</h1>
+    <h1 class="header catalog-header">Моноподы для селфи</h1>
     <ol class="nav-catalog">
       <li class="nav-catalog__link"><a href="index.html">Главная</a></li>
       <li class="nav-catalog__link"><a href="">Каталог товаров</a></li>
@@ -48,6 +48,14 @@
     </ol>
     <section class="filter">
       <form action="https://echo.htmlacademy.ru" method="get" class="filter__form">
+        <h2 class="filter__form_title">Фильтр:</h2>
+        <fieldset class="filter__form_field">
+          <legend class="filter__form_header">Стоимость</legend>
+          <label for="min-price" class="filter__form_label">от</label>
+          <input type="number" id="min-price" name="min-price" value="0" class="filter__form_number" readonly>
+          <label for="max-price" class="filter__form_label">до</label>
+          <input type="number" id="max-price" name="max-price" value="5000" class="filter__form_number" readonly>
+        </fieldset>
         <fieldset class="filter__form_field">
           <legend class="filter__form_header">Цвет</legend>
           <ul>
@@ -68,7 +76,7 @@
               <label for="filter-color-red" class="filter__form_option">Красный</label>
             </li>
             <li class="filter__form_list-item">
-              <input type="checkbox" name="pink" id="filter-color-pink" class="filter__form_checkbox" disabled>
+              <input type="checkbox" name="pink" id="filter-color-pink" class="filter__form_checkbox">
               <label for="filter-color-pink" class="filter__form_option">Розовый</label>
             </li>
           </ul>
@@ -77,7 +85,7 @@
           <legend class="filter__form_header">Bluetooth</legend>
           <ul>
             <li class="filter__form_list-item">
-              <input type="radio" name="bluetooth" value="1" id="filter-bluetooth-1" class="filter__form_radio">
+              <input type="radio" name="bluetooth" value="1" id="filter-bluetooth-1" class="filter__form_radio" checked>
               <label for="filter-bluetooth-1" class="filter__form_option">Есть</label>
             </li>
             <li class="filter__form_list-item">
@@ -90,6 +98,16 @@
       </form>
     </section>
     <section class="items-section">
+      <div class="sorting">
+        <h2 class="sorting__header">Сортировка:</h2>
+        <ul class="sorting__list">
+          <li class="sorting__list-item"><a href="" class="sorting__list-link sorting__list-link_current">По цене</a></li>
+          <li class="sorting__list-item"><a href="" class="sorting__list-link">По типу</a></li>
+          <li class="sorting__list-item"><a href="" class="sorting__list-link">По популярности</a></li>
+          <li class="sorting__list-item"><a href="" class="sorting__list-link" aria-label="По возрастанию"></a></li>
+          <li class="sorting__list-item"><a href="" class="sorting__list-link sorting__list-link_current" aria-label="По убыванию"></a></li>
+        </ul>
+      </div>
       <ul class="item">
         <li class="item__list">
           <a href="">
@@ -120,6 +138,15 @@
           </a>
         </li>
       </ul>
+      <div class="paginator">
+        <ul class="paginator__list">
+          <li class="paginator__list-item"><a href="" class="paginator__list-link paginator__list-link_button">Вперед</a></li>
+          <li class="paginator__list-item"><a href="" class="paginator__list-link paginator__list-link_current">1</a></li>
+          <li class="paginator__list-item"><a href="" class="paginator__list-link">2</a></li>
+          <li class="paginator__list-item"><a href="" class="paginator__list-link">3</a></li>
+          <li class="paginator__list-item"><a href="" class="paginator__list-link paginator__list-link_button">Назад</a></li>
+        </ul>
+      </div>
     </section>
   </main>
   <footer class="footer">
@@ -136,7 +163,7 @@
       <li class="menu__item"><a href="" class="menu__item_footer">Гарантия</a></li>
       <li class="menu__item menu__item_contacts"><a href="" class="menu__item_footer">Контакты</a></li>
     </ul>
-    <p class="footer-contacts footer-contacts_phone">Тел.: +7(495)495-95-95</p>
+    <a href="tel:+74954959595" class="footer-contacts footer-contacts_phone">Тел.: +7(495)495-95-95</a>
     <ul class="socials">
       <li class="socials__item socials__item_facebook"><a href="" aria-label="Фейсбук"></a></li>
       <li class="socials__item socials__item_instagram"><a href="" aria-label="Инстаграм"></a></li>
